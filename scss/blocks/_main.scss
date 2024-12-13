@@ -1,0 +1,119 @@
+.main {
+  margin-top: 50px;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &-img{
+    width: 513px;
+    height: 423px;
+  }
+  &__wrap {
+    &-hr {
+      width: 94px;
+      height: 5px;
+      background-color: #e74040;
+      border: none;
+    }
+    &-title {
+      //styleName: h2;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title-text;
+      padding: 35px 0;
+    }
+    &-text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $op-text;
+      padding-bottom: 35px;
+    }
+    &-link {
+      //styleName: link;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #96bb7c;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .main {
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-img{
+      width: 313px;
+      height: 223px;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      &-hr {
+        width: 94px;
+        height: 5px;
+        background-color: #e74040;
+        border: none;
+      }
+      &-title {
+        //styleName: h2;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $title-text;
+        padding: 35px 0;
+      }
+      &-text {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $op-text;
+        padding-bottom: 35px;
+      }
+      &-link {
+        //styleName: link;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #96bb7c;
+      }
+    }
+  }
+}

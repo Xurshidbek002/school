@@ -1,0 +1,251 @@
+.aside {
+  background-color: #fafafa;
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right {
+    // position: relative;
+    width: 60%px;
+    height: 100%;
+    &-img {
+      position: absolute;
+      top: 80px;
+      right: 0px;
+      width: 650px;
+      height: 550px;
+      z-index: 0;
+    }
+  }
+  &__row {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    z-index: 2;
+    &-div {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &-text {
+      //styleName: h5;
+
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.10000000149011612px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $yellow;
+    }
+    &-title {
+      padding-top: 30px;
+      width: 542px;
+      height: 160px;
+      //styleName: h1;
+      font-family: Montserrat;
+      font-size: 58px;
+      font-weight: 700;
+      line-height: 80px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+    &-matn {
+      padding: 30px 0;
+      box-sizing: content-box;
+      width: 450px;
+      height: 60px;
+
+      //styleName: h4;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+
+    &-leftbtn {
+      width: 198px;
+      height: 50px;
+      padding: 15px 40px 15px 40px;
+      gap: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: $yellow;
+      color: $white;
+      cursor: pointer;
+
+      //styleName: btn-text;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    &-rightbtn {
+      width: 170px;
+      height: 50px;
+      padding: 15px 40px 15px 40px;
+      gap: 10px;
+      border-radius: 5px;
+      border: 1px solid $yellow;
+      background-color: $white;
+      color: $yellow;
+      cursor: pointer; //styleName: btn-text;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+  &__cards {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    &-card {
+      z-index: 2;
+      border-radius: 8px;
+      padding: 35px;
+      width: 330px;
+      height: 300px;
+      border: none;
+      background-color: $white;
+      box-shadow: 0px 10px 15px 0px #00000012;
+    }
+    &-div {
+      box-sizing: content-box;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: #e74040;
+    }
+    &-img {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    &-title {
+      //styleName: h3;
+      padding: 20px 0;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0.10000000149011612px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+    &-hr {
+      border: none;
+      border-radius: 3px;
+      width: 50px;
+      height: 2px;
+      background-color: #e74040;
+    }
+    &-text {
+      //styleName: paragraph;
+      width: 80%;
+      padding-top: 20px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .aside {
+    &__cards {
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .aside {
+    background-color: rgba(196, 80, 80, 0.091);
+    // padding-top: 30px;
+    &__right {
+      display: none;
+    }
+    &__row {
+      padding: 20px 0;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .aside {
+    &__cards {
+      &-card {
+        width: 290px;
+      }
+    }
+    &__row {
+      padding-left: 10px;
+      &-title {
+        width: 300px;
+        height: 80px;
+        padding-top: 20px;
+        font-size: 30px;
+        line-height: 35px;
+      }
+      &-matn {
+        padding-top: 20px;
+        width: 300px;
+        font-size: 20px;
+      }
+      &-div {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+      }
+      &-rightbtn {
+        width: 193px;
+        height: 50px;
+        padding: 15px 40px 15px 40px;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid $yellow;
+        background-color: $white;
+        color: $yellow;
+        cursor: pointer;
+
+        //styleName: btn-text;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
+}

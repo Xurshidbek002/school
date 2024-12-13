@@ -1,0 +1,47 @@
+.footers {
+  background-color: #fafafa;
+  &__bottom {
+    padding: 22px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-text {
+      //styleName: h6;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+    &-list {
+      width: 150px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &-icons {
+      width: 30px;
+      height: 30px;
+    }
+    &-icon {
+      font-size: 24px;
+      color: $yellow;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .footers {
+    &__bottom {
+      flex-direction: column;
+      gap: 20px;
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

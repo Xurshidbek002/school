@@ -28,7 +28,7 @@ sentBtn.addEventListener("click", function (e) {
       Swal.fire({
         title: "Good job!",
         text: "You clicked the button!",
-        icon: "success"
+        icon: "success",
       });
     })
     .catch(() => {
@@ -50,4 +50,30 @@ sentBtn.addEventListener("click", function (e) {
         }
       });
     });
+});
+
+let headerbtn = document.querySelector(".header__block-btn");
+headerbtn.addEventListener("click", function (e) {
+  Swal.fire({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "error",
+  });
+});
+let asideleftbtn = document.querySelector(".aside__row-leftbtn");
+asideleftbtn.addEventListener("click", function () {
+  Swal.fire({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "success",
+  });
+});
+
+let asiderightbtn = document.querySelector(".aside__row-rightbtn");
+asiderightbtn.addEventListener("click", function () {
+  Swal.fire({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "success",
+  });
 });

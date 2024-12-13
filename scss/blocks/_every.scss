@@ -1,0 +1,121 @@
+.every {
+  padding: 80px 0;
+  &__blok {
+    &-link {
+      //styleName: h6;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $yellow;
+    }
+    &-title {
+      //styleName: h2;
+      padding: 10px 0px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+    &-text {
+      //styleName: paragraph;
+      width: 340px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+  }
+  &__list {
+    padding-top: 70px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+    &-img {
+      width: 160px;
+      height: 26px;
+      margin: 0 auto;
+    }
+    &-item {
+      padding: 0px 65px;
+      width: 290px;
+      height: 250px;
+    }
+    &-text {
+      padding-top: 15px;
+      //styleName: paragraph;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+    &-cerd {
+      padding-top: 30px;
+      padding-left: 7px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-pic {
+      width: 50px;
+      height: 50px;
+    }
+    &-title {
+      //styleName: h6;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $yellow;
+    }
+    &-subtitle {
+      //styleName: small;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+  }
+}
+@media screen and (max-width:415px){
+    .every{
+        &__blok{
+            &-title{
+                font-size: 30px;
+            }
+            &-text{
+                width: 280px;
+            }
+        }
+    }
+}

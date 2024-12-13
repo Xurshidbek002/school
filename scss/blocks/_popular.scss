@@ -1,0 +1,116 @@
+.popular {
+  &__blok {
+    &-link {
+      //styleName: h6;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $yellow;
+    }
+    &-title {
+      //styleName: h2;
+      padding: 10px 0px;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+    &-text {
+      //styleName: paragraph;
+      width: 340px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+  }
+  &__list {
+    padding: 60px 0;
+    display: flex;
+    align-items: start;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 35px;
+    &-item {
+      width: 238px;
+      height: 375px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0px 13px 19px 0px #00000012;
+    }
+    &-subimg {
+      width: 241px;
+      height: 231px;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    &-title {
+      padding-top: 30px;
+      //styleName: h5;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.10000000149011612px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $title;
+    }
+    &-text {
+      padding-top: 10px;
+      //styleName: small;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text;
+    }
+    &-list{
+      padding-top: 15px;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      gap: 20px;
+    }
+    &-icon{
+      font-size: 25px;
+      color:$yellow;
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .popular {
+    &__blok {
+      &-title {
+        font-size: 30px;
+      }
+      &-text {
+        width: 280px;
+      }
+    }
+  }
+}
